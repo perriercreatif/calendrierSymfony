@@ -1,0 +1,27 @@
+# config/routes.yaml
+
+#index:
+#    path:    /
+#    controller: App\Controller\Controller::index
+
+
+
+scheduler_index:
+    path:     /
+    controller: App\Controller\SchedulerController::indexAction
+    methods:  [GET]
+
+scheduler_create:
+    path:     /calendrier-create
+    controller: App\Controller\SchedulerController::createAction
+    methods:  [POST]
+
+scheduler_update:
+    path:     /calendrier-update
+    controller: App\Controller\SchedulerController::updateAction
+    methods:  [POST]
+
+scheduler_delete:
+    path:     /calendrier-delete
+    controller: App\Controller\SchedulerController::deleteAction
+    methods:  [DELETE]
