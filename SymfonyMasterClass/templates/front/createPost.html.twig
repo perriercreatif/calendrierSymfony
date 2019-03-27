@@ -1,0 +1,30 @@
+{% extends 'bo-layout.html.twig' %}
+
+{% form_theme formPost 'bootstrap_4_layout.html.twig' %}
+
+
+{% block body %}
+
+    <h1>
+        {% if createPost %}
+            Enregistrer les mofifications
+        {% else %}
+            Ajouter l'article
+        {% endif %}
+    </h1>
+
+    {{ form_start(formPost) }}
+
+    {{ form_row(formPost.title, {'attr':{'placeholder':"Titre de l'article"}}) }}
+    {{ form_row(formPost.description, {'attr':{'placeholder':"Contenu de l'article"}}) }}
+
+    <button type="submit" class="btn btn-success">
+        {% if createPost %}
+            Enregistrer les mofifications
+        {% else %}
+            Ajouter l'article
+        {% endif %}
+    </button>
+
+    {{ form_end(formPost) }}
+{% endblock %}
