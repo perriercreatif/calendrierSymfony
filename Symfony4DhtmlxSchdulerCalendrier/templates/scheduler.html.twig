@@ -4,6 +4,7 @@
 {% block stylesheets %}
     <!-- Include the flat style of the scheduler -->
     <link rel='stylesheet' type='text/css' href='{{ asset("libraries/dhtmlxScheduler/codebase/dhtmlxscheduler_flat.css") }}' charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('libraries/dhtmlxScheduler/codebase/dhtmlxscheduler_material.css') }}" charset="utf-8"/>
     <!-- If you won't use full screen mode, ignore the following style -->
     <style type="text/css" media="screen">
         html, body{
@@ -36,6 +37,10 @@
 {% block javascripts %}
     <!-- Include the scheduler library -->
     <script src='{{ asset("libraries/dhtmlxScheduler/codebase/dhtmlxscheduler.js") }}' type='text/javascript' charset="utf-8"></script>
+    <script src='{{ asset("libraries/dhtmlxScheduler/codebase/dhtmlxscheduler.js") }}' type='text/javascript' charset="utf-8"></script>
+
+    <script src="{{ asset('libraries/dhtmlxScheduler/codebase/ext/dhtmlxscheduler_limit.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('libraries/dhtmlxScheduler/codebase/sources/locale/locale_fr.js') }}"></script>
 
     <!-- Include jQuery to handle AJAX Requests -->
     <script src="{{ 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js' }}"></script>
@@ -60,4 +65,5 @@
 
     <!-- Include the schedulerScripts that you will need to write in the next step -->
     <script src='{{ asset("libraries/schedulerScripts.js") }}' type='text/javascript' charset="utf-8"></script>
+
 {% endblock %}
