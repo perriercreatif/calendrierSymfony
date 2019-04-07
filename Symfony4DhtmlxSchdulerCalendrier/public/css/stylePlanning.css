@@ -1,0 +1,62 @@
+#calendrier{
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    width: 80%;
+}
+
+.pageCalendrier {
+    width: 100%;
+    padding: 2%;
+    margin: 0 auto;
+}
+
+.textCalendrier{
+    padding:2%;
+}
+
+#scheduler_here {
+    width: 100%;
+    height: 70vh;
+}
+
+#scheduler_element {
+    width: 100%;
+    height: 70vh;
+}
+
+.dhx_cal_navline {
+    width: 100% !important;
+}
+
+.dhx_cal_data {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.dhx_cal_event, .dhx_title {
+    background-color: #bd9dff !important;
+}
+
+.dhx_cal_event, .dhx_body {
+    background-color: #bd9dff !important;
+}
+
+.dhx_multi_day {
+    width: 100% !important;
+}
+
+.figeac_section{
+    background-color: #ff87c9;
+    opacity: 0.25;
+}
+
+.Decazeville_section{
+    background-color: #bd9dff;
+    opacity: 0.25;
+}
+
+.Capdenac_section{
+    background-color: #ffe972;
+    opacity: 0.25;
+}

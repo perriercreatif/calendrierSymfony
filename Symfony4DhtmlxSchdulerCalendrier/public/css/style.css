@@ -1,0 +1,45 @@
+/* style.css */
+:root {
+	--maingreen: #5f9735;
+	--sidegreen: #A0C947;
+	--mainprune: #772067;
+}
+
+html{
+	position: relative;
+}
+
+body {
+	font-family: 'Work Sans', sans-serif;
+}
+
+.page{
+	width:100%;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+h2 {
+	font-weight: bold;
+	margin: 0;
+}
+
+
+
+/*petit Ecran*/
+@media only screen and (max-width: 991px) {
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 727px) {
+
+}
+
+@media only screen and (max-width: 687px){
+
+}

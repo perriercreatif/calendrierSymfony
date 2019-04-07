@@ -328,7 +328,7 @@ window.dhtmlXScheduler = window.scheduler = {version: "5.1.6"}, window.dhtmlx ||
 }, scheduler._isObject = function (e) {
     return e && "object" == typeof e
 }, window.dhtmlx || (window.dhtmlx = {}), function () {
-    function e(e, t) {
+    /*function e(e, t) {
         setTimeout(function () {
             if (e.box) {
                 var r = e.callback;
@@ -488,7 +488,7 @@ window.dhtmlXScheduler = window.scheduler = {version: "5.1.6"}, window.dhtmlx ||
             t.parentNode.removeChild(t),
                 t = null
         }, 2e3), t.className += " hidden", u.timers[e] && window.clearTimeout(u.timers[e]), delete u.pull[e])
-    }
+    }*/
 }(), dhtmlx.attachEvent || dhtmlxEventable(dhtmlx);
 var dataProcessor = window.dataProcessor = function (e) {
     return this.serverProcessor = e, this.action_param = "!nativeeditor_status", this.object = null, this.updatedRows = [], this.autoUpdate = !0, this.updateMode = "cell", this._tMode = "GET", this._headers = null, this._payload = null, this.post_delim = "_", this._waitMode = 0, this._in_progress = {}, this._invalid = {}, this.mandatoryFields = [],
@@ -1096,7 +1096,7 @@ dataProcessor.prototype = {
     var o = this.addEvent(r);
     return this.callEvent("onEventCreated", [this._drag_id, i]), this._loading = !1, this._drag_event = {}, this._on_mouse_up(i), o
 }, scheduler._on_dbl_click = function (e, t) {
-    if (t = t || e.target || e.srcElement, !this.config.readonly) {
+    /*if (t = t || e.target || e.srcElement, !this.config.readonly) {
         var i = scheduler._getClassName(t).split(" ")[0];
         switch (i) {
             case"dhx_scale_holder":
@@ -1123,7 +1123,7 @@ dataProcessor.prototype = {
                 var s = this["dblclick_" + i];
                 if (s) s.call(this, e); else if (t.parentNode && t != this) return scheduler._on_dbl_click(e, t.parentNode);
         }
-    }
+    }*/
 }, scheduler._get_column_index = function (e) {
     var t = 0;
     if (this._cols) {
@@ -2736,13 +2736,13 @@ scheduler.formSection = function (e) {
     }
     this.show_cover()
 },scheduler.showLightbox = function (e) {
-    if (e) {
+   /* if (e) {
         if (!this.callEvent("onBeforeLightbox", [e])) return void (this._new_event && (this._new_event = null));
         var t = this.getLightbox();
         this.showCover(t), this._fill_lightbox(e, t), this._waiAria.lightboxVisibleAttr(t), this.callEvent("onLightbox", [e])
-    }
+    }*/
 },scheduler._fill_lightbox = function (e, t) {
-    var i = this.getEvent(e), r = t.getElementsByTagName("span"), s = [];
+    /*var i = this.getEvent(e), r = t.getElementsByTagName("span"), s = [];
     if (scheduler.templates.lightbox_header) {
         s.push("");
         var a = scheduler.templates.lightbox_header(i.start_date, i.end_date, i);
@@ -2768,9 +2768,9 @@ scheduler.formSection = function (e) {
         var s = this.form_blocks[t[i].type], a = s.get_value.call(this, r, e, t[i]);
         "auto" != t[i].map_to && (e[t[i].map_to] = a)
     }
-    return e
+    return e*/
 },scheduler._empty_lightbox = function (e) {
-    var t = scheduler._lightbox_id, i = this.getEvent(t);
+    /*var t = scheduler._lightbox_id, i = this.getEvent(t);
     this.getLightbox();
     this._lame_copy(i, e), this.setEvent(i.id, i), this._edit_stop_event(i, !0), this.render_view_data()
 },scheduler.hide_lightbox = function (e) {
@@ -2786,22 +2786,22 @@ scheduler.formSection = function (e) {
             t = document.documentElement ? document.documentElement.scrollHeight : 0;
         this._cover.style.height = Math.max(e, t) + "px",
             document.body.appendChild(this._cover)
-    }
+    }*/
 },scheduler.save_lightbox = function () {
-    var e = this._lightbox_out({}, this._lame_copy(this.getEvent(this._lightbox_id)));
+    /*var e = this._lightbox_out({}, this._lame_copy(this.getEvent(this._lightbox_id)));
     (!this.checkEvent("onEventSave") || this.callEvent("onEventSave", [this._lightbox_id, e, this._new_event])) && (this._empty_lightbox(e), this.hide_lightbox())
 },scheduler.startLightbox = function (e, t) {
-    this._lightbox_id = e, this._custom_lightbox = !0, this._temp_lightbox = this._lightbox, this._lightbox = t, this.showCover(t)
+    this._lightbox_id = e, this._custom_lightbox = !0, this._temp_lightbox = this._lightbox, this._lightbox = t, this.showCover(t)*/
 },scheduler.endLightbox = function (e, t) {
-    var t = t || scheduler.getLightbox(), i = scheduler.getEvent(this._lightbox_id);
-    i && this._edit_stop_event(i, e), e && scheduler.render_view_data(), this.hideCover(t), this._custom_lightbox && (this._lightbox = this._temp_lightbox, this._custom_lightbox = !1), this._temp_lightbox = this._lightbox_id = null, this._waiAria.lightboxHiddenAttr(t), this.callEvent("onAfterLightbox", [])
+    /*var t = t || scheduler.getLightbox(), i = scheduler.getEvent(this._lightbox_id);
+    i && this._edit_stop_event(i, e), e && scheduler.render_view_data(), this.hideCover(t), this._custom_lightbox && (this._lightbox = this._temp_lightbox, this._custom_lightbox = !1), this._temp_lightbox = this._lightbox_id = null, this._waiAria.lightboxHiddenAttr(t), this.callEvent("onAfterLightbox", [])*/
 },scheduler.resetLightbox = function () {
-    scheduler._lightbox && !scheduler._custom_lightbox && scheduler._lightbox.parentNode.removeChild(scheduler._lightbox), scheduler._lightbox = null
+    /*scheduler._lightbox && !scheduler._custom_lightbox && scheduler._lightbox.parentNode.removeChild(scheduler._lightbox), scheduler._lightbox = null*/
 },scheduler.cancel_lightbox = function () {
-    this.callEvent("onEventCancel", [this._lightbox_id, this._new_event]),
-        this.hide_lightbox()
+    /*this.callEvent("onEventCancel", [this._lightbox_id, this._new_event]),
+        this.hide_lightbox()*/
 },scheduler._init_lightbox_events = function () {
-    this.getLightbox().onclick = function (e) {
+    /*this.getLightbox().onclick = function (e) {
         var t = e ? e.target : event.srcElement;
         if (t.className || (t = t.previousSibling), !(t && t.className && scheduler._getClassName(t).indexOf("dhx_btn_set") > -1) || (t = t.querySelector("[dhx_button]"))) {
             var i = scheduler._getClassName(t);
@@ -2840,13 +2840,13 @@ scheduler.formSection = function (e) {
             case scheduler.keys.edit_cancel:
                 scheduler.cancel_lightbox()
         }
-    }
+    }*/
 },scheduler.setLightboxSize = function () {
-    var e = this._lightbox;
+  /*  var e = this._lightbox;
     if (e) {
         var t = e.childNodes[1];
         t.style.height = "0px", t.style.height = t.scrollHeight + "px", e.style.height = t.scrollHeight + scheduler.xy.lightbox_additional_height + "px", t.style.height = t.scrollHeight + "px"
-    }
+    }*/
 },scheduler._init_dnd_events = function () {
     dhtmlxEvent(document.body, "mousemove", scheduler._move_while_dnd), dhtmlxEvent(document.body, "mouseup", scheduler._finish_dnd), scheduler._init_dnd_events = function () {
     }

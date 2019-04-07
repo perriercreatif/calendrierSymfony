@@ -1,0 +1,161 @@
+#calendrier{
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    width: 80%;
+}
+
+.pageCalendrier {
+    width: 100%;
+    padding: 2%;
+    margin: 0 auto;
+}
+
+.textCalendrier{
+    padding:2%;
+}
+
+#scheduler_here {
+    width: 100%;
+    height: 70vh;
+}
+
+#scheduler_element {
+    width: 100%;
+    height: 70vh;
+}
+
+.dhx_cal_navline {
+    width: 100% !important;
+}
+
+.dhx_cal_data {
+    width: 100% !important;
+}
+
+.dhx_cal_event, .dhx_title {
+    background-color: #bd9dff !important;
+}
+
+.dhx_cal_event, .dhx_body {
+    background-color: #bd9dff !important;
+}
+
+.dhx_cal_tab {
+    width: 10% !important;
+    background-color: white;
+    padding-top: 1px;
+    border-radius: 0;
+    cursor: pointer;
+    border: 1px solid #ac77b3;
+    border-right:1px solid rgb(172, 119, 179) ;
+    color: var(--mainprune);
+    font-size: inherit;
+}
+
+.dhx_cal_tab.active {
+    text-decoration: none;
+    cursor: default;
+    font-weight: 500;
+    font-size: inherit;
+    color: #fff;
+    border: 1px solid var(--mainprune);
+    background-color:var(--mainprune);
+    z-index: 25;
+}
+
+.dhx_cal_tab.active:hover {
+    color: #fff;
+    background-color: var(--mainprune);
+
+}
+
+.day_tab {
+    left: 0 !important;
+}
+
+.week_tab {
+    left: 11% !important;
+}
+
+.month_tab {
+    left: 22% !important;
+}
+
+.dhx_multi_day {
+    width: 100% !important;
+}
+
+.figeac_section{
+    background-color: #ff87c9;
+    opacity: 0.25;
+}
+
+.Decazeville_section{
+    background-color: #bd9dff;
+    opacity: 0.25;
+}
+
+.Capdenac_section{
+    background-color: #ffe972;
+    opacity: 0.25;
+}
+
+.dhtmlx_modifier_une_copie_button{
+    display:none!important;
+}
+
+/*css modal*/
+.dhx_cal_ltitle {
+    background-color: #ac77b3 !important;
+    border-bottom: 1px solid #ac77b3 !important;
+}
+
+.dhx_cal_ltitle .dhx_title {
+    background-color: #ac77b3 !important;
+}
+
+.dhx_cal_light_rec.dhx_cal_light_wide {
+    width: 70%;
+}
+
+.dhx_cal_ltitle {
+    background-color: #ac77b3 !important;
+    border-bottom: 1px solid #ac77b3 !important;
+}
+
+.dhx_section_time {
+    height: auto !important;
+    width: 58% !important;
+}
+
+.dhx_form_repeat {
+    width: 100%;
+    height: 15%;
+    display: flex;
+}
+
+.dhx_form_repeat form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dhx_repeat_left {
+    width: 100% !important;
+}
+
+.dhx_repeat_center {
+    width: 100% !important;
+}
+
+.dhx_repeat_right {
+    width: 100% !important;
+    height: auto !important;
+}
+
+/*taille modal occasionnel*/
+.dhx_cal_light {
+    width:70%;
+    height: auto !important;
+}

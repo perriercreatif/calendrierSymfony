@@ -1,20 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello BlogController!{% endblock %}
+{% block title %}Calendrier Scheduler pour symfony{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello ! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-
-        <li>Your template at <code><a href="{{ 'C:/wamp64/www/sandBox/templates/blog/index.html.twig'|file_link(0) }}">templates/blog/index.html.twig</a></code></li>
-    </ul>
+<div class="container-fluid">
+    <h1>Calendrier Scheduler pour symfony</h1>
+    <p>Petite Tuto :<br>La page affichage de chaque calendrier empéche la création, suppresion ou suppression des événement.<br>Pour modifier, creer ou supprimer il faut aller dans les page modification</p>
+    <p>Pour plus d'explication:<br><a href="{{ 'https://ourcodeworld.com/articles/read/224/creating-an-event-calendar-scheduler-with-dhtmlxscheduler-in-symfony-3' }}" target="_blank">lien du tutoriel pour symfony 3</a><br><a href="{{ 'https://dhtmlx.com/' }}" target="_blank">Lien du site Scheduler avec la documentation</a><br><a href="{{ 'https://dhtmlx.com/docs/products/dhtmlxScheduler/download.shtml' }}" target="_blank">Lien pour telecharger le packs original</a><br><a href="{{ 'https://dhtmlx.com/docs/products/docsExplorer/samples.shtml' }}" target="_blank">Lien vers les exemples</a></p>
+    </div>
 </div>
 {% endblock %}

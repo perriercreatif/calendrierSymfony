@@ -1,27 +1,57 @@
 # config/routes.yaml
 
-#index:
-#    path:    /
-#    controller: App\Controller\Controller::index
+index:
+    path:    /
+    controller: App\Controller\Controller::index
 
 
 
-scheduler_index:
-    path:     /
-    controller: App\Controller\SchedulerController::indexAction
+planningRecurrent_admin:
+    path:     /admin/planningRecurrent
+    controller: App\Controller\PlanningRecurrentController::indexActionAdmin
     methods:  [GET]
 
-scheduler_create:
-    path:     /calendrier-create
-    controller: App\Controller\SchedulerController::createAction
+planningRecurrent:
+    path:     /planningRecurrent
+    controller: App\Controller\PlanningRecurrentController::indexAction
+    methods:  [GET]
+
+planningRecurrent_create:
+    path:     /admin/planningRecurrent_create
+    controller: App\Controller\PlanningRecurrentController::createAction
     methods:  [POST]
 
-scheduler_update:
-    path:     /calendrier-update
-    controller: App\Controller\SchedulerController::updateAction
+planningRecurrent_update:
+    path:     /admin/planningRecurrent_update
+    controller: App\Controller\PlanningRecurrentController::updateAction
     methods:  [POST]
 
-scheduler_delete:
-    path:     /calendrier-delete
-    controller: App\Controller\SchedulerController::deleteAction
+planningRecurrent_delete:
+    path:     /admin/planningRecurrent_delete
+    controller: App\Controller\PlanningRecurrentController::deleteAction
+    methods:  [DELETE]
+
+planningOccasionnel_admin:
+    path:     /admin/planningOccasionnel
+    controller: App\Controller\PlanningOccasionnelController::indexActionAdmin
+    methods:  [GET]
+
+planningOccasionnel:
+    path:     /planningOccasionnel
+    controller: App\Controller\PlanningOccasionnelController::indexAction
+    methods:  [GET]
+
+planningOccasionnel_create:
+    path:     /admin/planningOccasionnel_create
+    controller: App\Controller\PlanningOccasionnelController::createAction
+    methods:  [POST]
+
+planningOccasionnel_update:
+    path:     /admin/planningOccasionnel_update
+    controller: App\Controller\PlanningOccasionnelController::updateAction
+    methods:  [POST]
+
+planningOccasionnel_delete:
+    path:     /admin/planningOccasionnel_delete
+    controller: App\Controller\PlanningOccasionnelController::deleteAction
     methods:  [DELETE]

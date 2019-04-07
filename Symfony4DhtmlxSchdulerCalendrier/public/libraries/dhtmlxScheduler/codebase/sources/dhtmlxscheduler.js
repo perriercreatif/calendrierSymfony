@@ -4714,7 +4714,7 @@ scheduler.init_templates=function(){
 			return ev.text;
 		},
 		month_events_link : function(date, count){
-			return "<a>View more("+count+" events)</a>";
+			return "<a>Voir +("+count+")</a>";
 		},
 		drag_marker_class : function(start, end, event){
 			return "";
